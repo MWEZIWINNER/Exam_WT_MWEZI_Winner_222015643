@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style type="text/css">
+ /* Dropdown container */
+    /* Linkslogo
+    a {
+      padding: 10px;
+      color: brown;
+      background-color: pink;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      background-color: beige;
+    }
+    a:active {
+      background-color: red;
+    }
+    /* Search button */
+    button.btn {
+      margin-left: 15px;
+      margin-top: 4px;
+    }
+    /* Search input */
+    input.form-control {
+      margin-left: 15px;
+      padding: 8px;
+    }
+    /* Header list items */
+    header ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    header ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: beige;
+    }
+    .dropdown {
+    position: relative;
+    display: inline;
+    margin-right:10px;
+   }
+   .dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    left:0;
+   }
+   .dropdown:hover .dropdown-contents{
+    display: block;
+   }
+   .dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+   }
+   .dropdown-contents a: hover{
+    background-color: #f1f1f1;
+   }
+   section{
+    padding: 80px;
+    border-bottom: 1px solid #ddd;
+   }
+   footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: beige;
+}
+ </style>
+
+</head>
+<body>
+  <header>
+    <body style="background-image: url('./image/cont.jpeg'); background-size: cover; background-repeat: no-repeat;">
+
+  <form class="d-flex" role="search" action="search.php">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+  <ul>
+    <li><img src="./image/logo.jpeg" width="90" height="60" alt="Logo"></li>
+    <li><a href="./home.html">HOME</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li><a href="./contact.html">CONTACT</a></li>
+      <li class="dropdown" style="display: inline; margin-right: 10px;">
+    <a href="#" class="dropdown-toggle" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">tables</a>
+    <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        
+        <a href="./account.php">ACCOUNT</a>
+    <a href="./user.php">USER</a>
+    <a href="./transactions.php">TRANSACTION</a>
+    <a href="./budgets.php">BUDGETS</a>
+    <a href="./expenses.php">EXPENSES</a>
+    <a href="./goals.php">GOALS</a>
+    <a href="./reports.php">REPORT</a>
+    <a href="./reminders.php">REMINDER</a>
+    <a href="./income.php">INCOME</a>
+    </div>
+</li>
+     <li class="dropdown" style="display: inline; margin-right: 10px;">
+    <a href="#" class="dropdown-toggle" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">Settings</a>
+    <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+    </div></li></ul>
+
+    
+    <h1>Contact Us</h1>
+    <h2><bold><u> OUR CONTACT US</u></bold></h2>
+</ul>
+
+
+  <li>Address: 125 Main Street, kicukiro city, State</li>
+  <li>Phone: +250 791028876</li>
+  <li>Email: info@personalfinancemanagementsystem.com</li>
+
+
+  </header>
+  <form>
+    <h1> leave a message </h1>
+   <li> <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required></li>
+    
+   <li> <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required></li>
+    
+    <li><label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea></li>
+    
+    <li><button type="submit">Submit</button></li>
+  </form>
+  <footer>
+  <b><h2>&copy; 2024 personal finance management system. All rights reserved, Designed by: @Winner MWEZI</h2></b>
+</footer>
+</body>
+</html>
